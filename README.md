@@ -31,3 +31,5 @@ New saves are written in the same folder as the save you edited. It does NOT ove
 "_Edited" is appended to the original save name by default to prevent overwriting accidents.
 
 <img width="1192" height="690" alt="image" src="https://github.com/user-attachments/assets/2edc762b-391a-4d99-ba2f-d4131f13ae56" />
+
+Special thanks to the legends maintaining https://dungeonsettlers.wiki/ for freely providing json files mined from the game, which I used liberally.
