@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DungeonSettlersSaveEditor/DungeonSettlersSaveEditor.csproj" />
+  <Project Path="DungeonSettlersSaveEditorLibrary/DungeonSettlersSaveEditorLibrary.csproj" />
+</Solution>

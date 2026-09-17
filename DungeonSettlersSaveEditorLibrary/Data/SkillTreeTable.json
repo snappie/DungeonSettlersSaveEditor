@@ -1,0 +1,702 @@
+[
+ {
+  "Key": "SKILLTREE_Sword_0",
+  "DevComment1": "검 스킬 트리",
+  "SkillKey_Column1": "SKILL_VerticalSlash",
+  "SkillKey_Column2": "SKILL_ChargeAttack",
+  "SkillKey_Column3": "SKILL_SwordCounter"
+ },
+ {
+  "Key": "SKILLTREE_Sword_1",
+  "DevComment1": "검 스킬 트리",
+  "SkillKey_Column1": "SKILL_ChainSlash",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_PommelStrike"
+ },
+ {
+  "Key": "SKILLTREE_Sword_2",
+  "DevComment1": "검 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "SKILL_SwordFlow",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Sword_3",
+  "DevComment1": "검 스킬 트리",
+  "SkillKey_Column1": "SKILL_SaberGale",
+  "SkillKey_Column2": "SKILL_DualRequest",
+  "SkillKey_Column3": "SKILL_SentinelCry"
+ },
+ {
+  "Key": "SKILLTREE_Greatsword_0",
+  "DevComment1": "대검 스킬 트리",
+  "SkillKey_Column1": "SKILL_Slay",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_DestructiveSplit"
+ },
+ {
+  "Key": "SKILLTREE_Greatsword_1",
+  "DevComment1": "대검 스킬 트리",
+  "SkillKey_Column1": "SKILL_DeadlyFear",
+  "SkillKey_Column2": "SKILL_BladeGrinding",
+  "SkillKey_Column3": "SKILL_ChargingWhirlwind"
+ },
+ {
+  "Key": "SKILLTREE_Greatsword_2",
+  "DevComment1": "대검 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Greatsword_3",
+  "DevComment1": "대검 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Blunt_0",
+  "DevComment1": "둔기 스킬 트리",
+  "SkillKey_Column1": "SKILL_BattleStomp",
+  "SkillKey_Column2": "SKILL_IronClad",
+  "SkillKey_Column3": "SKILL_Hammering"
+ },
+ {
+  "Key": "SKILLTREE_Blunt_1",
+  "DevComment1": "둔기 스킬 트리",
+  "SkillKey_Column1": "SKILL_VileInsult",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_WildFlurry"
+ },
+ {
+  "Key": "SKILLTREE_Blunt_2",
+  "DevComment1": "둔기 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Blunt_3",
+  "DevComment1": "둔기 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Bow_0",
+  "DevComment1": "활 스킬 트리",
+  "SkillKey_Column1": "SKILL_SnipingShot",
+  "SkillKey_Column2": "SKILL_ArrowRain",
+  "SkillKey_Column3": "SKILL_AnkleBreak"
+ },
+ {
+  "Key": "SKILLTREE_Bow_1",
+  "DevComment1": "활 스킬 트리",
+  "SkillKey_Column1": "SKILL_HeadAim",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_QuickDash"
+ },
+ {
+  "Key": "SKILLTREE_Bow_2",
+  "DevComment1": "활 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Bow_3",
+  "DevComment1": "활 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_FireMagic_0",
+  "DevComment1": "화염 마법 스킬 트리",
+  "SkillKey_Column1": "SKILL_FireCloak",
+  "SkillKey_Column2": "SKILL_Incinerate",
+  "SkillKey_Column3": "SKILL_BlazingEcho"
+ },
+ {
+  "Key": "SKILLTREE_FireMagic_1",
+  "DevComment1": "화염 마법 스킬 트리",
+  "SkillKey_Column1": "SKILL_BecomeFire",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_Explosion"
+ },
+ {
+  "Key": "SKILLTREE_FireMagic_2",
+  "DevComment1": "화염 마법 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_FireMagic_3",
+  "DevComment1": "화염 마법 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_WaterMagic_0",
+  "DevComment1": "물 마법 스킬 트리",
+  "SkillKey_Column1": "SKILL_TidalMark",
+  "SkillKey_Column2": "SKILL_EmbracingWave",
+  "SkillKey_Column3": "SKILL_GlacierDrop"
+ },
+ {
+  "Key": "SKILLTREE_WaterMagic_1",
+  "DevComment1": "물 마법 스킬 트리",
+  "SkillKey_Column1": "SKILL_SummonBubbleToad",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_WaterDive"
+ },
+ {
+  "Key": "SKILLTREE_WaterMagic_2",
+  "DevComment1": "물 마법 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_WaterMagic_3",
+  "DevComment1": "물 마법 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_NatureMagic_0",
+  "DevComment1": "자연 마법 스킬 트리",
+  "SkillKey_Column1": "SKILL_MucusSprayer",
+  "SkillKey_Column2": "SKILL_ClingingVines",
+  "SkillKey_Column3": "SKILL_SolarBloom"
+ },
+ {
+  "Key": "SKILLTREE_NatureMagic_1",
+  "DevComment1": "자연 마법 스킬 트리",
+  "SkillKey_Column1": "SKILL_SnatchingPrey",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_SunHeartBloom"
+ },
+ {
+  "Key": "SKILLTREE_NatureMagic_2",
+  "DevComment1": "자연 마법 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_NatureMagic_3",
+  "DevComment1": "자연 마법 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Shield_0",
+  "DevComment1": "방패 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "SKILL_ShieldUp",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Shield_1",
+  "DevComment1": "방패 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "SKILL_GuardiansTaunt",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Shield_2",
+  "DevComment1": "방패 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Shield_3",
+  "DevComment1": "방패 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Spear_0",
+  "DevComment1": "창 스킬 트리",
+  "SkillKey_Column1": "SKILL_TwinThrust",
+  "SkillKey_Column2": "SKILL_Anchor",
+  "SkillKey_Column3": "SKILL_OpeningStrike"
+ },
+ {
+  "Key": "SKILLTREE_Spear_1",
+  "DevComment1": "창 스킬 트리",
+  "SkillKey_Column1": "SKILL_QuickRetreat",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_SpearBash"
+ },
+ {
+  "Key": "SKILLTREE_Spear_2",
+  "DevComment1": "창 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Spear_3",
+  "DevComment1": "창 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Warrior_0",
+  "DevComment1": "검_투사 스킬 트리",
+  "SkillKey_Column1": "SKILL_TwoHandGrip",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_SwordmansResolve"
+ },
+ {
+  "Key": "SKILLTREE_Warrior_1",
+  "DevComment1": "검_투사 스킬 트리",
+  "SkillKey_Column1": "SKILL_FlowSeeker",
+  "SkillKey_Column2": "SKILL_BladeSpirit",
+  "SkillKey_Column3": "SKILL_SharpEdge"
+ },
+ {
+  "Key": "SKILLTREE_Warrior_2",
+  "DevComment1": "검_투사 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Warrior_3",
+  "DevComment1": "검_투사 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Guardian_0",
+  "DevComment1": "방패_수호자 스킬 트리",
+  "SkillKey_Column1": "SKILL_ShieldHandling",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_Bastion"
+ },
+ {
+  "Key": "SKILLTREE_Guardian_1",
+  "DevComment1": "방패_수호자 스킬 트리",
+  "SkillKey_Column1": "SKILL_Withstand",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_ElasticGuard"
+ },
+ {
+  "Key": "SKILLTREE_Guardian_2",
+  "DevComment1": "방패_수호자 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Guardian_3",
+  "DevComment1": "방패_수호자 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Fortress_0",
+  "DevComment1": "둔기_요새 스킬 트리",
+  "SkillKey_Column1": "SKILL_GuardBarrier",
+  "SkillKey_Column2": "SKILL_Fortified",
+  "SkillKey_Column3": "SKILL_BarrierResurge"
+ },
+ {
+  "Key": "SKILLTREE_Fortress_1",
+  "DevComment1": "둔기_요새 스킬 트리",
+  "SkillKey_Column1": "SKILL_FinesseEdge",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_MockingGrin"
+ },
+ {
+  "Key": "SKILLTREE_Fortress_2",
+  "DevComment1": "둔기_요새 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Fortress_3",
+  "DevComment1": "둔기_요새 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Burst_0",
+  "DevComment1": "화염_작렬 스킬 트리",
+  "SkillKey_Column1": "SKILL_Ignition",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_LastCinder"
+ },
+ {
+  "Key": "SKILLTREE_Burst_1",
+  "DevComment1": "화염_작렬 스킬 트리",
+  "SkillKey_Column1": "SKILL_FireProof",
+  "SkillKey_Column2": "SKILL_FireBattleMage",
+  "SkillKey_Column3": "SKILL_FlameOfLife"
+ },
+ {
+  "Key": "SKILLTREE_Burst_2",
+  "DevComment1": "화염_작렬 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Burst_3",
+  "DevComment1": "화염_작렬 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Blitz_0",
+  "DevComment1": "활_급습 스킬 트리",
+  "SkillKey_Column1": "SKILL_FastHand",
+  "SkillKey_Column2": "SKILL_BulkShot",
+  "SkillKey_Column3": "SKILL_SharpShooter"
+ },
+ {
+  "Key": "SKILLTREE_Blitz_1",
+  "DevComment1": "활_급습 스킬 트리",
+  "SkillKey_Column1": "SKILL_FirstAssault",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_CombatMomentum"
+ },
+ {
+  "Key": "SKILLTREE_Blitz_2",
+  "DevComment1": "활_급습 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Blitz_3",
+  "DevComment1": "활_급습 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Execution_0",
+  "DevComment1": "대검_처형 스킬 트리",
+  "SkillKey_Column1": "SKILL_InevitableBlow",
+  "SkillKey_Column2": "SKILL_CrimsonRecoil",
+  "SkillKey_Column3": "SKILL_ColdFury"
+ },
+ {
+  "Key": "SKILLTREE_Execution_1",
+  "DevComment1": "대검_처형 스킬 트리",
+  "SkillKey_Column1": "SKILL_FatalVerdict",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_Executioner"
+ },
+ {
+  "Key": "SKILLTREE_Execution_2",
+  "DevComment1": "대검_처형 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Execution_3",
+  "DevComment1": "대검_처형 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Berserker_0",
+  "DevComment1": "대검_광란 스킬 트리",
+  "SkillKey_Column1": "SKILL_SavageBarrier",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_Maelstrom"
+ },
+ {
+  "Key": "SKILLTREE_Berserker_1",
+  "DevComment1": "대검_광란 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Berserker_2",
+  "DevComment1": "대검_광란 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Berserker_3",
+  "DevComment1": "대검_광란 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Tide_0",
+  "DevComment1": "물_파도 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "SKILL_ExtraBubble",
+  "SkillKey_Column3": "SKILL_EbbAndFlow"
+ },
+ {
+  "Key": "SKILLTREE_Tide_1",
+  "DevComment1": "물_파도 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "SKILL_DeepWater",
+  "SkillKey_Column3": "SKILL_WaveCicle"
+ },
+ {
+  "Key": "SKILLTREE_Tide_2",
+  "DevComment1": "물_파도 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Tide_3",
+  "DevComment1": "물_파도 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Harmony_0",
+  "DevComment1": "자연_조화 스킬 트리",
+  "SkillKey_Column1": "SKILL_InnerGrove",
+  "SkillKey_Column2": "SKILL_LifeBurst",
+  "SkillKey_Column3": "SKILL_HealingTouch"
+ },
+ {
+  "Key": "SKILLTREE_Harmony_1",
+  "DevComment1": "자연_조화 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "SKILL_LifeCycle",
+  "SkillKey_Column3": "SKILL_GreenShade"
+ },
+ {
+  "Key": "SKILLTREE_Harmony_2",
+  "DevComment1": "자연_조화 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Harmony_3",
+  "DevComment1": "자연_조화 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Stake_0",
+  "DevComment1": "창_말뚝 스킬 트리",
+  "SkillKey_Column1": "SKILL_RecklessAssault",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "SKILL_Initiative"
+ },
+ {
+  "Key": "SKILLTREE_Stake_1",
+  "DevComment1": "창_말뚝 스킬 트리",
+  "SkillKey_Column1": "SKILL_BattleCadence",
+  "SkillKey_Column2": "SKILL_BraceStance",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Stake_2",
+  "DevComment1": "창_말뚝 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Stake_3",
+  "DevComment1": "창_말뚝 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Logging_0",
+  "DevComment1": "벌목 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Logging_1",
+  "DevComment1": "벌목 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Logging_2",
+  "DevComment1": "벌목 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Logging_3",
+  "DevComment1": "벌목 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Mining_0",
+  "DevComment1": "채광 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Mining_1",
+  "DevComment1": "채광 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Mining_2",
+  "DevComment1": "채광 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Mining_3",
+  "DevComment1": "채광 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Cooking_0",
+  "DevComment1": "요리 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Cooking_1",
+  "DevComment1": "요리 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Cooking_2",
+  "DevComment1": "요리 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Cooking_3",
+  "DevComment1": "요리 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Crafting_0",
+  "DevComment1": "제작 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Crafting_1",
+  "DevComment1": "제작 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Crafting_2",
+  "DevComment1": "제작 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Crafting_3",
+  "DevComment1": "제작 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Construction_0",
+  "DevComment1": "건설 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Construction_1",
+  "DevComment1": "건설 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Construction_2",
+  "DevComment1": "건설 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Construction_3",
+  "DevComment1": "건설 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Research_0",
+  "DevComment1": "연구 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Research_1",
+  "DevComment1": "연구 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Research_2",
+  "DevComment1": "연구 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ },
+ {
+  "Key": "SKILLTREE_Research_3",
+  "DevComment1": "연구 스킬 트리",
+  "SkillKey_Column1": "NULL",
+  "SkillKey_Column2": "NULL",
+  "SkillKey_Column3": "NULL"
+ }
+]
