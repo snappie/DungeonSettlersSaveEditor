@@ -9,8 +9,9 @@ namespace DungeonSettlersSaveEditor
 
         private Dictionary<string, string> affecters;
         private Dictionary<string, string> characterGuids;
+        private Dictionary<string, string> currentInscriptionsForIndex;
 
-        //private string savePath = "C:\\Users\\Bert\\AppData\\LocalLow\\CanOpener\\Dungeon Settlers\\Saves\\AddedSkillTest.json";
+
         private Save save;
 
         public MainForm()
@@ -89,11 +90,12 @@ namespace DungeonSettlersSaveEditor
             int selectedCharacterIndex = CharacterGuidList.SelectedIndex;
             if (selectedCharacterIndex >= 0)
             {
-                int selectedInscriptionIndex = InscriptionList.SelectedIndex;
+                int selectedInscriptionIndex = CurrentInscriptionsList.SelectedIndex;
                 if (selectedInscriptionIndex >= 0)
                 {
                     string selectedCharacterGuid = characterGuids.ElementAt(selectedCharacterIndex).Key;
-                    string selectedInscriptionId = affecters.ElementAt(selectedInscriptionIndex).Key;
+                    string selectedInscriptionId = currentInscriptionsForIndex.ElementAt(selectedInscriptionIndex).Key;
+
                     save.removeInscriptionToCharacter(selectedCharacterGuid, selectedInscriptionId);
                     getCurrentInscriptions();
                 }
@@ -121,11 +123,17 @@ namespace DungeonSettlersSaveEditor
             if (selectedCharacterIndex >= 0)
             {
                 string selectedCharacterGuid = characterGuids.ElementAt(selectedCharacterIndex).Key;
-                List<string> currentInscriptions = save.getCurrentInscriptionsFromCharacter(selectedCharacterGuid);
 
-                foreach (string inscription in currentInscriptions)
+                List<string> currentInscriptions = save.getCurrentInscriptionsFromCharacter(selectedCharacterGuid);
+                affecters = TableReader.GetInscriptionKeyList();
+                currentInscriptionsForIndex = new Dictionary<string, string>();
+
+                foreach (string inscriptionKey in currentInscriptions)
                 {
-                    CurrentInscriptionsList.Items.Add(inscription);
+                    string inscriptionName = affecters[inscriptionKey];
+                    CurrentInscriptionsList.Items.Add(inscriptionName);
+
+                    currentInscriptionsForIndex.Add(inscriptionKey, inscriptionName);
                 }
             }
             else
