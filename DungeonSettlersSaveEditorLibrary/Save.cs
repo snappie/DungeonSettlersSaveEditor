@@ -29,7 +29,6 @@ namespace DungeonSettlersSaveEditorLibrary
             // Read the file
             string jsonText = File.ReadAllText(orignalSavePath);
             saveJson = JsonNode.Parse(jsonText);
-            //characters = new List<Character>();
             characterDictionary = new Dictionary<string, Character>();
 
             // Load Characters

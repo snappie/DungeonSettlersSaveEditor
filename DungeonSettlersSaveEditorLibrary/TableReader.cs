@@ -123,6 +123,7 @@ namespace DungeonSettlersSaveEditorLibrary
 
         public static Dictionary<string, Dictionary<string, string>> getSkillInscriptionNameList()
         {
+            TableReader.createSkillInscriptionPairJson();
             if (skillInscriptionNameList == null)
             {
                 skillInscriptionNameList = new Dictionary<string, Dictionary<string, string>>();

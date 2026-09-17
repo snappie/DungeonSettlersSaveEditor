@@ -28,7 +28,7 @@ namespace DungeonSettlersSaveEditor
             CurrentInscriptionsList.Items.Clear();
 
             string newSaveName = Path.GetFileName(filePath);
-            newSaveName = newSaveName.Substring(newSaveName.Length - 4) + "Edited";
+            newSaveName = newSaveName.Substring(0, newSaveName.Length - 5) + "_Edited";
             TextBoxNewSaveName.Text = newSaveName;
             save = new Save(filePath, newSaveName);
 
@@ -52,7 +52,6 @@ namespace DungeonSettlersSaveEditor
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            TableReader.createSkillInscriptionPairJson();
             CurrentInscriptionsCharacterName.Text = "";
 
             TableReader.getSkillInscriptionNameList();

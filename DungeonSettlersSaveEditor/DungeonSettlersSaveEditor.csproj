@@ -6,7 +6,19 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion></AssemblyVersion>
+    <Version>0.1.0.1</Version>
   </PropertyGroup>
+
+  <Target Name="ZipPublish" AfterTargets="Publish" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <ZipFile>$(PublishDir)..\DungeonSettlersSaveEditor-v$(Version).zip</ZipFile>
+    </PropertyGroup>
+
+    <Exec Command="powershell -NoProfile -Command &quot;Compress-Archive -Path '$(PublishDir)*' -DestinationPath '$(ZipFile)' -Force&quot;" />
+
+    <Message Text="Created release ZIP: $(ZipFile)" Importance="high" />
+  </Target>
 
   <ItemGroup>
     <ProjectReference Include="..\DungeonSettlersSaveEditorLibrary\DungeonSettlersSaveEditorLibrary.csproj" />

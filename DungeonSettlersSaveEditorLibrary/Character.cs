@@ -56,15 +56,18 @@ namespace DungeonSettlersSaveEditorLibrary
             }
         }
 
-        public void addSkill(string type, string key)
+        public void addSkill(string type, string skill)
         {
             // Add the skill to the tree
             JsonArray? skillTree = SkillTree[type]!.AsArray();
-            skillTree.Add(key);
+            skillTree.Add(skill);
 
             // Add an empty array for learned skills to prevent a null reference exception.
 
-            LearnedSkills.AsObject().Add(key, new JsonArray());
+            if (!LearnedSkills.AsObject().ContainsKey(skill))
+            {
+                LearnedSkills.AsObject().Add(skill, new JsonArray());
+            }
         }
 
         public void removeSkill(string type, string skill)
