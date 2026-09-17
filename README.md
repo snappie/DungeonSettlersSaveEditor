@@ -25,6 +25,7 @@ Usage:
 - Click "Load Save"
 - Click the Character you want to edit.
 - Click the inscription you want to Add/Remove
+- Click the corresponding button
 - Press "Save Changes" when you're done.
 
 New saves are written in the same folder as the save you edited. It does NOT overwrite the old save unless you use the same name.
