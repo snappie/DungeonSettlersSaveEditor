@@ -169,7 +169,7 @@ namespace DungeonSettlersSaveEditor
         {
             if (ListBoxCurrentCharacterMainSkills.SelectedIndex != -1)
             {
-                string selectedSkill = mainSkillList.ElementAt(ListBoxCurrentCharacterMainSkills.SelectedIndex);
+                string selectedSkill = currentMainSkills.ElementAt(ListBoxCurrentCharacterMainSkills.SelectedIndex);
                 removeSkill(selectedSkill ,"Main");
             }
         }
@@ -187,7 +187,7 @@ namespace DungeonSettlersSaveEditor
         {
             if (ListBoxCurrentCharacterSubSkills.SelectedIndex != -1)
             {
-                string selectedSkill = subSkillList.ElementAt(ListBoxCurrentCharacterSubSkills.SelectedIndex);
+                string selectedSkill = currentSubSkills.ElementAt(ListBoxCurrentCharacterSubSkills.SelectedIndex);
                 removeSkill(selectedSkill, "Sub");
             }
         }

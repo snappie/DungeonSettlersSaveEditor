@@ -7,7 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyVersion></AssemblyVersion>
-    <Version>0.1.1.0</Version>
+    <Version>0.1.1.1</Version>
   </PropertyGroup>
 
   <Target Name="ZipPublish" AfterTargets="Publish" Condition="'$(Configuration)' == 'Release'">
