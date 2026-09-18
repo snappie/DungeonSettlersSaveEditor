@@ -1,9 +1,11 @@
 # DungeonSettlersSaveEditor
 
+Tested for version Game Version DS_B.0.4.23
+
 This code allows you to edit saves for the game DungeonSettlers.
 It is a Windows Forms application so it will only run on a Windows Machine.
 
-It can currently only edit the inscriptions applied to characters, but I will expand the functionality. The Editor manually edits learned skills and skill points when Applying/Removing those traits. I haven't extensively tested other traits yet, but the tests I have performed went well. That being said, expect bugs. I will try to fix reported bugs but I might just not be able to do so with just save editing. 
+**It can currently only edit the inscriptions applied to characters**, but I will expand the functionality. The Editor manually edits learned skills and skill points when Applying/Removing those traits. I haven't extensively tested other traits yet, but the tests I have performed went well. That being said, expect bugs. I will try to fix reported bugs but I might just not be able to do so with just save editing. 
 
 Known issues:
  - Removing an inscription that grants a skill, removes the skil even if the character would have had the skill without the inscription.

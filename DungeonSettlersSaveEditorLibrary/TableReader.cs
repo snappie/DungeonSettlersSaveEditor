@@ -9,6 +9,11 @@ using System.Text.Json.Nodes;
 
 namespace DungeonSettlersSaveEditorLibrary
 {
+
+    /// <summary>
+    /// A class that reads JSOn tables containing game data.
+    /// This class is not read anything from saves
+    /// </summary>
     public static class TableReader
     {
         private static Dictionary<string, string> inscriptionKeyNamePairList;
@@ -18,6 +23,8 @@ namespace DungeonSettlersSaveEditorLibrary
 
         // Do you want a dicionary with your dictionary?
         private static Dictionary<string, Dictionary<string, string>> skillInscriptionNameList;
+
+        private static Dictionary<string, Skill> skillList;
 
         private static Dictionary<string, string> TextKeyNames;
 
@@ -74,6 +81,8 @@ namespace DungeonSettlersSaveEditorLibrary
         /// Especially the ["Key"] == ["DevComment3"] is really shaky but it's the only way I found to detect them reliably.
         /// 
         /// I'm currently running ths every startup because f it.
+        /// 
+        /// This skill list also completely independent of getSkillList() so some mismatches may occur
         /// </summary>
         public static void createSkillInscriptionPairJson()
         {
@@ -94,7 +103,7 @@ namespace DungeonSettlersSaveEditorLibrary
                     if (skill is "Fire" or "Water" or "Nature")
                         skill += "Magic";
 
-
+                    // Currently, all "rare" rarity skill inscriptions are sub skills, and "uncommon" ones are main skills.
                     JsonObject result = new JsonObject
                     {
                         ["Key"] = x?["Key"]?.GetValue<string>(),
@@ -119,6 +128,70 @@ namespace DungeonSettlersSaveEditorLibrary
                 writeJsonPath,
                 System.Text.Json.JsonSerializer.Serialize(inscriptionData, options)
             );
+        }
+
+        /// <summary>
+        /// I'm generating the skill list by checking what skills are mentioned in backgrounds.
+        /// I don't have a json file that contains them in an easily retrieveable list.
+        /// If one day a skill is added that isn't part of a background, then it won't show up here.
+        /// </summary>
+        /// <returns></returns>
+        public static Dictionary<string, Skill> getSkillList()
+        {
+            if (skillList == null)
+            {
+                skillList = new Dictionary<string, Skill>();   
+
+                string tablePath = Environment.CurrentDirectory + @"/Data/TraitTable.json";
+                string tableJson = File.ReadAllText(tablePath);
+                JsonArray traitTable = JsonNode.Parse(tableJson)!.AsArray();
+
+                List<JsonObject> backgrounds = traitTable
+                    .OfType<JsonObject>()
+                    .Where(x => x["TypeName"]?.GetValue<string>() == "Background")
+                    .ToList();
+
+                foreach (JsonObject background in backgrounds)
+                {
+                    processSkillTree(background, "AvaliableMainSkillTreeTypes", "Main");
+                    processSkillTree(background, "AvaliableSubSkillTreeTypes", "Sub");
+                }
+            }
+            return skillList;
+        }
+
+        /// <summary>
+        /// because I don't want the classes in the Forms
+        /// </summary>
+        /// <returns></returns>
+        public static List<string> getSkillNameListOfType(string type)
+        {
+            getSkillList();
+            List<string> skillNameList = new List<string>();
+            foreach (KeyValuePair<string, Skill> skill in skillList)
+            {
+                if (skill.Value.type == type)
+                skillNameList.Add(skill.Key);
+            }
+            return skillNameList;
+        }
+        private static void processSkillTree(JsonObject background, string skillTreeName, string type)
+        {
+            if (background.ContainsKey(skillTreeName))
+            {
+                JsonArray? skillListJson = background[skillTreeName]?.AsArray();
+                foreach (JsonNode? skill in skillListJson)
+                {
+                    string skillName = skill!.GetValue<string>();
+                    if (skillName == "NULL")
+                        continue;
+                    if (!skillList.ContainsKey(skillName))
+                    {
+                        Skill newSkill = new Skill(skillName, type);
+                        skillList.Add(skillName, newSkill);
+                    }
+                }
+            }
         }
 
         public static Dictionary<string, Dictionary<string, string>> getSkillInscriptionNameList()

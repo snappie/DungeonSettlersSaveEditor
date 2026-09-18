@@ -19,6 +19,9 @@ namespace DungeonSettlersSaveEditorLibrary
         private JsonNode? AffecterHolders;
         private JsonArray? EntityComponentsArray;
 
+        private JsonNode? progressionStats;
+
+        private JsonNode? permanentStats;
 
         public Character(string guid)
         {
@@ -33,9 +36,13 @@ namespace DungeonSettlersSaveEditorLibrary
             LearnedSkills = Save.saveJson["PlayerUnitsSaveData"]!["SkillTrees"]![guid]!["LearnedSkills"]!;
             EntityComponents = Save.saveJson["EntityComponentSaveData"]!["EntityComponents"]![guid]!;
 
+
             // TODO: Make a bit more elegant, this is fragile.
             AffecterHolders = EntityComponents[2]![1]![1]!;
             EntityComponentsArray = Save.saveJson["EntityComponentSaveData"]!["EntityComponents"]![guid].AsArray()!;
+
+            progressionStats = EntityComponentsArray.FirstOrDefault(x => x?["Type"]?.GetValue<int>() == 0)["Data"]["ProgressionStats"];
+            permanentStats = EntityComponentsArray.FirstOrDefault(x => x?["Type"]?.GetValue<int>() == 0)["Data"]["PermanentStats"];
         }
 
         private string getName()
@@ -56,14 +63,29 @@ namespace DungeonSettlersSaveEditorLibrary
             }
         }
 
+        public List<string> getCurrentSkillsOfType(string type)
+        {
+            List<string> skillList = new List<string>();
+            JsonArray? skillTree = SkillTree[type]!.AsArray();
+            foreach (var skillTreeItem in skillTree)
+            {
+                string skillName = skillTreeItem.GetValue<string>();
+                skillList.Add(skillName);
+            }
+            return skillList;
+        }
+
         public void addSkill(string type, string skill)
         {
             // Add the skill to the tree
             JsonArray? skillTree = SkillTree[type]!.AsArray();
-            skillTree.Add(skill);
+            if (!skillTree.Contains(skill))
+            {
+                skillTree.Add(skill);
+
+            }
 
             // Add an empty array for learned skills to prevent a null reference exception.
-
             if (!LearnedSkills.AsObject().ContainsKey(skill))
             {
                 LearnedSkills.AsObject().Add(skill, new JsonArray());
@@ -88,16 +110,25 @@ namespace DungeonSettlersSaveEditorLibrary
 
         public void addInscription(Inscription inscription)
         {
-            switch (inscription.type)
+            // Check if the inscription is already present
+            List<string> currentInscriptions = getCurrentInscriptions();
+            if (!currentInscriptions.Contains(inscription.inscriptionId))
             {
-                case InscriptionType.NormalInscription:
-                    addInscriptionDefaultSteps(inscription);
-                    break;
+                switch (inscription.type)
+                {
+                    case InscriptionType.NormalInscription:
+                        addInscriptionDefaultSteps(inscription);
+                        break;
 
-                case InscriptionType.SkillInscription:
-                    addSkillInscription(inscription);
-                    addInscriptionDefaultSteps(inscription);
-                    break;
+                    case InscriptionType.SkillInscription:
+                        addSkillInscription(inscription);
+                        addInscriptionDefaultSteps(inscription);
+                        break;
+                }
+            }
+            else
+            {
+                // Do nothing or tell the user it's already present
             }
         }
 
@@ -179,12 +210,68 @@ namespace DungeonSettlersSaveEditorLibrary
 
         public void addSkillPoints(string type, int added)
         {
-            JsonNode? progressionStats = EntityComponentsArray.FirstOrDefault(x => x?["Type"]?.GetValue<int>() == 0);
             string skillCounterName = type + "SkillPoint";
 
-            var skillPoints = progressionStats["Data"]["ProgressionStats"][skillCounterName].GetValue<float>();
+            //var skillPoints = progressionStats["Data"]["ProgressionStats"][skillCounterName].GetValue<float>();
+            var skillPoints = progressionStats[skillCounterName].GetValue<float>();
             skillPoints = skillPoints + added;
-            progressionStats["Data"]["ProgressionStats"][skillCounterName] = skillPoints;
+            progressionStats[skillCounterName] = skillPoints;
+        }
+
+        public Dictionary<string, float> getTalentLevels()
+        {
+            Dictionary<string, float> talentLevels = new Dictionary<string, float>();
+
+            talentLevels.Add("TalentStrength", (float)progressionStats["TalentStrength"]);
+            talentLevels.Add("TalentConstitution", (float)progressionStats["TalentConstitution"]);
+            talentLevels.Add("TalentWillPower", (float)progressionStats["TalentWillPower"]);
+            talentLevels.Add("TalentIntelligence", (float)progressionStats["TalentIntelligence"]);
+            talentLevels.Add("TalentAgility", (float)progressionStats["TalentAgility"]);
+            talentLevels.Add("TalentPerception", (float)progressionStats["TalentPerception"]);
+            return talentLevels;
+        }
+
+        public void changeTalentLevel(string statName, float newValue)
+        {
+            if (newValue >= -1.0f && newValue <= 3.0f)
+            {
+                changeProgressionStat(statName, newValue);
+            }
+            else
+            { 
+                //nonsense value
+            }
+        }
+
+        public Dictionary<string, float> getPermanentStats()
+        {
+            Dictionary<string, float> permanentStatsDictionary = new Dictionary<string, float>();
+
+            string[] statNames = { "Strength", "Constitution", "WillPower", "Intelligence", "Agility", "Perception" };
+            foreach (string statName in statNames)
+            {
+                if (permanentStats.AsObject().ContainsKey(statName))
+                {
+                    permanentStatsDictionary.Add(statName, (float)permanentStats[statName]);
+                }
+                else
+                {
+                    permanentStatsDictionary.Add(statName, 0.0f);
+                }
+            }
+            return permanentStatsDictionary;
+        }
+
+        public void changePermanentStats(string statName, float newValue)
+        {
+
+            permanentStats[statName] = newValue;
+        }
+
+        public void changeProgressionStat(string statName, float newValue)
+        {
+
+            progressionStats[statName] = newValue;
         }
     }
 }
