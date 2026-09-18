@@ -40,6 +40,8 @@ Usage:
 New saves are written in the same folder as the save you edited. It does NOT overwrite the old save unless you use the same name.
 "_Edited" is appended to the original save name by default to prevent overwriting accidents.
 
-<img width="1192" height="690" alt="image" src="https://github.com/user-attachments/assets/2edc762b-391a-4d99-ba2f-d4131f13ae56" />
+<img width="1200" height="1117" alt="image" src="https://github.com/user-attachments/assets/439a72c9-05fe-454b-b7f6-c6ec8fc7a3bc" />
+<img width="1200" height="1117" alt="image" src="https://github.com/user-attachments/assets/274d2943-1fc8-4c9c-9eb2-4ecc671252a6" />
+
 
 Special thanks to the legends maintaining https://dungeonsettlers.wiki/ for freely providing json files mined from the game, which I used liberally.
