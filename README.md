@@ -5,13 +5,15 @@ Tested for version Game Version DS_B.0.4.23
 This code allows you to edit saves for the game DungeonSettlers.
 It is a Windows Forms application so it will only run on a Windows Machine.
 
-**It can currently only edit the inscriptions applied to characters**, but I will expand the functionality. The Editor manually edits learned skills and skill points when Applying/Removing those traits. I haven't extensively tested other traits yet, but the tests I have performed went well. That being said, expect bugs. I will try to fix reported bugs but I might just not be able to do so with just save editing. 
+**It can currently only edit the inscriptions applied to characters**,
+Current functionality:
+ - Add / Remove Inscriptions to / from characters
+ - Alter Talent Levels
+ - Add / Remove Main and Sub skills from characters along with their skill trees.
+ - Edit Permanent Stats of characters (Stats usually added through stat-granting items like Elixirs)
 
-Known issues:
- - Removing an inscription that grants a skill, removes the skil even if the character would have had the skill without the inscription.
- - When removing a inscription that grants a skill, the program will try to remove 5 skill points as well. If you have less than 5 skill points you only lose whatever you had, as the game doesn't like negative skill points.
- - Currently I'm only using the English KeyNames, so the English Default names will show up for characters which aren't renamed regardless of what language your game is set to.
- 
+but I will expand the functionality. The Editor manually edits learned skills and skill points when Applying/Removing those traits. I haven't extensively tested other traits yet, but the tests I have performed went well. That being said, expect bugs. I will try to fix reported bugs but I might just not be able to do so with just save editing. 
+
 Planned features:
  - Editing Clan Gold
  - Editing inventory
@@ -20,6 +22,11 @@ Planned features:
  - Changing ironman status (if technically possible)
  - Having a GUI that doesn't make your eyes bleed. (It is really barebones now, see screenshot below)
  - Actual Error Handling
+
+Known issues:
+ - Removing an inscription that grants a skill, removes the skil even if the character would have had the skill without the inscription.
+ - When removing a inscription that grants a skill, the program will try to remove 5 skill points as well. If you have less than 5 skill points you only lose whatever you had, as the game doesn't like negative skill points.
+ - Currently I'm only using the English KeyNames, so the English Default names will show up for characters which aren't renamed regardless of what language your game is set to.
 
 I will probably maintain this code until mods come out.
 
